@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Dashboard from './Components/Dashboard';
+import { AppBar, Toolbar, Typography } from '@mui/material';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <AppBar position="static" sx={{ bgcolor: 'white', color: 'black', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}>
+    <Toolbar>
+      <Typography variant="h6" component="div">
+       <b>1 acre.in</b>
+      </Typography>
+    </Toolbar>
+  </AppBar>
+  <Dashboard />
+    </>
   );
 }
 
